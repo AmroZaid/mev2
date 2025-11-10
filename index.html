@@ -11,10 +11,10 @@
     <!--NavBar-->
     <div class="row justify-content-center align-items-center p-2 " id ="navBar">
         <div class="col-5 text-light text-center fs-2">Amro Al-Mohisn</div>
-        <div class="col"><a href="" class="btn btn-outline-light">About me</a></div>
-        <div class="col"><a href=""class="btn btn-outline-light">Studing</a></div>
-        <div class="col"><a href=""class="btn btn-outline-light">Projects</a></div>
-        <div class="col-4"><a href=""class="btn btn-outline-light">Contact</a></div>
+        <div class="col"><a href="#aboutMe" class="btn btn-outline-light">About me</a></div>
+        <div class="col"><a href="#studing"class="btn btn-outline-light">Studing</a></div>
+        <div class="col"><a href="#Skill"class="btn btn-outline-light">Skills</a></div>
+        <div class="col-4"><a href="#Contact"class="btn btn-outline-light">Contact</a></div>
     </div>
     <!--Hero section-->
     <section id="aboutMe" class="bg-dark text-white py-5">
@@ -24,16 +24,58 @@
                 Junior Year student aspiring to become a Mobile Developer, focused on creating
                 efficient and impactful applications.
             </p>
-            <a href="#projects" class="btn btn-lg btn-outline-light">View My Work</a>
+            <a href="#Skills" class="btn btn-lg btn-outline-light">View My Work</a>
         </div>
     </section>
-
-
-    <div class="container">
-
-
+    <!--adding the Studing and Contact-->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-5">
+                <h4 id="studing">Studing</h4>
+                <p class=" text-right">Studying CSD aka: Computing Smart Devices in Tafila Technical University, took a course in game development in Unity and
+                bulid a simple 2D platformer.</p>
+            </div>
+            <div class="col-3 ms-auto">
+                <h4 id="Contact">Contact</h4>
+                <p>
+                    Email: <a href="mailto:ammrroozaid@gmail.com" class="text-decoration-none fw-semibold">ammrroozaid@gmail.com</a>
+                    <br>
+                    Phone: <span class="fw-semibold">+962 781 427 025</span>
+                </p>
+            </div>
+        </div>
+        <hr>
     </div>
-    
+    <!--adding the skills  section-->
+    <div class="container">
+        <h2 id="Skills" class="text-center">Nerdy Skilles</h2>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <h3 class="card-title text-center">rubik's cube</h3>
+                    <div class="card-body">
+                        <img src="/assets/imges/rubikscube-2048px-08408.webp" alt="an image of a rubik's cube" class="card-img-top mb-3">
+                        <p class="card-text">I used to solve rubik's cube in under 20 second and my personal best was 13 second</p>
+                        <p  id="funFact1" class="card-text" id ="fun1">Fun fact: The total number of possible scrambled arrangements (permutations) on a standard 3x3 Rubik's Cube is over 43 quintillion
+                        ($43,252,003,274,489,856,000$).</p>
+                        <button class="btn btn-primary" onclick="fun1()">fun fact!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ms-auto">
+                <div class="card">
+                    <h3 class="card-title text-center">Chess</h3>
+                    <div class="card-body">
+                        <img src="/assets/imges/photo-1705043694763-978b6e1bff6c.webp" alt="an image of a chess board" class="card-img-top mb-3">
+                        <p class="card-text">I used to play chess competitively on "www.chess.com" and had a rating of 1300 rapid</p>
+                        <p id="funFact2"class="card-text">Fun fact: Computers have completely solved the chess endgame for any position with seven or fewer pieces remaining. 
+                            They know the
+                        perfect sequence of moves to achieve a win, loss, or draw from that point.</p>
+                            <button class="btn btn-primary" onclick="fun2()">fun fact!</button>
+                    </div>
+
+        </div>
 
     <script src="/assets/JS/bootstrap.bundle.min.js"></script>
     <script src="/assets/JS/script.js"></script>
